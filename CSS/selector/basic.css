@@ -1,0 +1,17 @@
+/* 1. 모든 요소 선택 : */
+*{
+    font-weight : bold;
+    color: darkorange;
+}
+
+/* 2. 태그선택자 */
+p{
+    color : olivedrab
+}
+/* 3. 클래스 선택자 */
+p.blue{
+    color: lightblue;
+}
+.blue.dark{
+    color: mediumblue;
+}
