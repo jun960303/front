@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form 태그 : 사용자로부터 입력을 받기 위한 양식을 작성하는 태그
+        - action : 전송한 정보를 처리할 경로
+        - method : 정보를 전송할 때 사용하는 방식 지정(get,post)
+        - 
+        시작 : file:///C:/source/front/html/basic/form1.html
+        제출 : file:///C:/source/front/html/basic/form1.html?name=%EA%B9%80%ED%98%95%EC%A4%80&age=15
+        영화검색 : https://search.naver.com/search.naver?where=nv&sm=top_sug.pre&fbm=0&acr=2&acq=%EC%98%81%ED%99%94&qdt=0&ie=utf8&query=%EC%98%81%ED%99%94&ackey=ohg6t7dt
+        
+        post 방식 : 입력한 값이 주소줄에 보이지 않음
+
+        1) type = "submit" : form 안 요소들을 action 에 적힌곳으로 전송
+        2) type = "reset" : form 안 요소들 초기화
+        3) label for="" : 제목 텍스트 
+            for 속성에 input 태그에 부여한 id 속성값과 도일한 값을 사용하는 경우 제목 클릭시 
+            input 속성에 포커스를 줄 수 있다.
+        4) type = "text"  : 짧은 text 입력 시 사용 
+        5) type = "number" : 숫자만 입력
+        6) type = "password" : 비밀번호 
+        7) type = "serarch" : 검색(x 버튼이 나옴)
+        8) type = "tel" : 전화번호 
+                pattern : 속성값을 이용해서 원하는 입력형식 지정
+        9) type = "number" , type="range" , type ="date"
+            - ragne 타입은 그 자체로는 의미가 없음 ( 선택 값이 표시되지 않음 => 자바스크립트 이용)
+        10) 체크관련 : checkbox, radio
+            - checkbox : 사용자로부터 여러 개 선택을 받는 경우 주로 사용 
+            - radio : 사용자로부터 하나의 선택을 받는 경우 주로 사용
+            - value 속성 무조건 작성
+            11) type = "file" : 파일첨부 
+                - accept : 첨부파일 제한 
+                - multiple : 여러 개 파일 ㅊ ㅓㅁ부 
+            12) type = "email" : 이메일 
+                - 이메일 형식을 확인(자세히 해 주는 것은 아님)
+            13) type ="hideen" : 화면에 요소는 안 보임
+
+        속성 
+        1) 텍스트 요소 
+            - pattern
+            - placeholder : 입력시 안내사항 
+            - minlength, maxlength : 최소,최대 입력 길이 지정
+        2) 숫자 요소 
+            - min , max , step
+        3) 공통 속성
+            - value 
+            - readonly : 읽기만 가능(수정불가)
+            - required : 필수 입력 요구 
+            - autofocus : 자동으로 특정 요소가 선택되도록 
+            - disabled : 특정 요소에 값 입력 불가, 서버 전송 안됨
+    -->
+     <form action="" method="get" autocomplete="off">
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name">
+        <label for="age">나이</label>
+        <input type="number" name="age" id="age">
+        <button type="submit">제출</button>
+        <button type="reset">최화</button>
+     </form>
+</body>
+</html>
