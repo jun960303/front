@@ -1,0 +1,16 @@
+html{
+    font-size: 14px;
+}
+div{
+    font-size : 2em;
+}
+p{
+    font-size: 2rem;
+}
+div p{
+    font-size: 2rem;
+}
+
+p{
+    width: 800px;
+}

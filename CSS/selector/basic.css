@@ -15,3 +15,11 @@ p.blue{
 .blue.dark{
     color: mediumblue;
 }
+/* 4. 아이디 선택자 */
+#red{
+    color: tomato;
+}
+/* 5. 그룹 선택자 */
+span,.dark,#red{
+    text-decoration: underline;
+}
