@@ -1,18 +1,20 @@
-ul{
-    /* disc(기본),circle,square */
-    list-style: square;
+ul {
+  /* disc(기본), circle, square */
+  list-style: square;
 }
 
-ul > li:first-child{
-    list-style: "★";
+ul > li:first-child {
+  list-style: "▶ ";
 }
-ol{
-    /* upper-alpha 
-    upper-roman
-    deimal(기본값)
+
+ol {
+  /* upper-alpha(lower-alpha)
+    upper-roman(lower-roman)
+    decimal(기본값)
     */
-    list-style: decimal;
+  list-style: decimal;
 }
-ul{
-    list-style: none;
+
+ul {
+  list-style: none;
 }
