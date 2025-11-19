@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <div>
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="address">주소</label>
+            <input type="adress" name="addr" id="addr">
+        </div>
+    </form>
+    <script>
+        // name 글자가 대문자라면 소문자로 변경 
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const addr = document.getElementById("addr");
+        name.addEventListener("change",(e)=>{
+            console.log(e.target);
+            console.log(e.target.value);
+            console.log(name.value);
+            name.value = name.value.toLowerCase();
+            // alert("name");
+        });
+
+        email.addEventListener("blur",(e) => {
+            email.value = email.value.toLowerCase();
+            // alert("email");
+        });
+
+        addr.addEventListener("input",(e) => {
+            addr.value = addr.value.toLowerCase();
+        });
+    </script>
+</body>
+</html>
