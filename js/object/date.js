@@ -1,7 +1,7 @@
 const date = new Date();
 
-console.log(date)
-console.log(typeof date)
+console.log(date);
+console.log(typeof date);
 console.log(`연도 : ${date.getFullYear()}`);
 console.log(`월 : ${date.getMonth()}`);
 console.log(`일 : ${date.getDate()}`);
